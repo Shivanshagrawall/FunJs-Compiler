@@ -1,9 +1,13 @@
 <h1 align="center">FunJS: A Simple Language Transpiler</h1>
 <h3 align="center">A simple transpiler that converts "FunJS" code into standard JavaScript.</h3>
+<br>
 <p align="center">
 <img src="https://user-images.githubusercontent.com/8102324/51284128-360a7e00-19d8-11e9-8390-589634c892b1.gif" alt="compiler-gif" width="400">
 </p>
+<p align="center">
 This project was built to understand the core principles of how a compiler works. It takes a custom, simplified programming language and converts it into a more common one (JavaScript).
+</p>
+<br>
 <br>
 🧐 What is a Transpiler?
 A transpiler is a special type of compiler that translates source code from one high-level language to another.
@@ -32,42 +36,49 @@ Provide a function_name and a list of parameters in parentheses.
 Use the arrow -> to separate the definition from the function's body.
 The expression is the calculation to perform (e.g., param1 + param2).
 <br>
+<br>
 ✨ Examples
 Here are some examples you can try in the terminal.
 Example 1: An add function
-Your FunJS Code:
+<p><b>Your FunJS Code:</b></p>
 Generated code
 fun add(num1, num2) -> num1 + num2
 Use code with caution.
-JavaScript Output:
+<p><b>JavaScript Output:</b></p>
 Generated javascript
 function add(num1, num2) { return num1 + num2; }
 Use code with caution.
 JavaScript
+<br>
 Example 2: A multiply function
-Your FunJS Code:
-Generated code
+<p><b>Your FunJS Code:</b></p>
+```
 fun multiply(x, y) -> x * y
-Use code with caution.
-JavaScript Output:
-Generated javascript
+```
+<p><b>JavaScript Output:</b></p>```javascript
 function multiply(x, y) { return x * y; }
-Use code with caution.
-JavaScript
+```
+<br>
 Example 3: A getArea function
-Your FunJS Code:
+<p><b>Your FunJS Code:</b></p>
 Generated code
-fun getArea(width, height) -> width * height```
-**JavaScript Output:**
-```javascript
+fun getArea(width, height) -> width * height
+Use code with caution.
+<p><b>JavaScript Output:</b></p>
+Generated javascript
 function getArea(width, height) { return width * height; }
 Use code with caution.
+JavaScript
+<br>
 <br>
 ⚙️ How It Works (A Simple Explanation)
 The transpiler processes the code in three main stages:
 Lexer (Tokenizer): Reads the raw code and breaks it into a list of "tokens." For example, fun, add, (, a, ).
+<br><br>
 Parser: Takes the tokens and builds a tree structure (an Abstract Syntax Tree or AST) that represents the code's meaning and hierarchy.
+<br><br>
 Generator: Traverses the AST and builds the final JavaScript code string based on the structure of the tree.
+<br>
 <p align="center">
 ---
 </p>

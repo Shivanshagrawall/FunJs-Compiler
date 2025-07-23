@@ -1,76 +1,76 @@
-<h1 style="border-bottom: 2px solid #eee; padding-bottom: 10px; margin-top: 40px;">FunJS: A Simple Language Transpiler</h1>
-    <p>
-        Welcome to FunJS! This project is a simple <strong style="color: #111;">transpiler</strong> that reads code written in our custom language, "FunJS," and converts it into standard JavaScript.
-    </p>
-    <p>
-        It's a fun project created to learn how a compiler works from the inside out.
-    </p>
-
-    <h2 style="border-bottom: 2px solid #eee; padding-bottom: 10px; margin-top: 40px;">What is a Transpiler?</h2>
-    <p>
-        A transpiler is a special type of compiler that takes source code written in one language and transforms it into source code of another language.
-    </p>
-    <p>In our case:</p>
-    <ul>
-        <li><strong style="color: #111;">Input:</strong> FunJS code (<code style="font-family: 'Courier New', Courier, monospace; background-color: #f4f4f4; padding: 2px 6px; border-radius: 4px; font-size: 0.9em;">fun add(a, b) -> a + b</code>)</li>
-        <li><strong style="color: #111;">Output:</strong> JavaScript code (<code style="font-family: 'Courier New', Courier, monospace; background-color: #f4f4f4; padding: 2px 6px; border-radius: 4px; font-size: 0.9em;">function add(a, b) { return a + b; }</code>)</li>
-    </ul>
-
-    <h2 style="border-bottom: 2px solid #eee; padding-bottom: 10px; margin-top: 40px;">How to Run the Transpiler</h2>
-    <p>You can run this transpiler on your computer easily.</p>
-    <ol>
-        <li>Open your terminal or command prompt.</li>
-        <li>Navigate to the project folder (<code style="font-family: 'Courier New', Courier, monospace; background-color: #f4f4f4; padding: 2px 6px; border-radius: 4px; font-size: 0.9em;">funjs-compiler</code>).</li>
-        <li>Run the following command:</li>
-    </ol>
-    <pre style="background-color: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto;"><code style="font-family: 'Courier New', Courier, monospace; background-color: transparent; padding: 0; font-size: 1em;">node run.js</code></pre>
-    <p>The program will then ask you to enter your FunJS code.</p>
-
-    <h2 style="border-bottom: 2px solid #eee; padding-bottom: 10px; margin-top: 40px;">How to Write FunJS Code</h2>
-    <p>FunJS has a very simple syntax for creating functions. The basic structure is:</p>
-    <pre style="background-color: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto;"><code style="font-family: 'Courier New', Courier, monospace; background-color: transparent; padding: 0; font-size: 1em;">fun <function_name>(<parameter1>, <parameter2>) -> <expression></code></pre>
-    <ul>
-        <li>Always start with the <code style="font-family: 'Courier New', Courier, monospace; background-color: #f4f4f4; padding: 2px 6px; border-radius: 4px; font-size: 0.9em;">fun</code> keyword.</li>
-        <li><code style="font-family: 'Courier New', Courier, monospace; background-color: #f4f4f4; padding: 2px 6px; border-radius: 4px; font-size: 0.9em;">function_name</code> is the name you want to give your function.</li>
-        <li><code style="font-family: 'Courier New', Courier, monospace; background-color: #f4f4f4; padding: 2px 6px; border-radius: 4px; font-size: 0.9em;">(parameter1, parameter2)</code> are the names of the inputs.</li>
-        <li><code style="font-family: 'Courier New', Courier, monospace; background-color: #f4f4f4; padding: 2px 6px; border-radius: 4px; font-size: 0.9em;">-></code> is a special arrow that points to the code the function will run.</li>
-        <li><code style="font-family: 'Courier New', Courier, monospace; background-color: #f4f4f4; padding: 2px 6px; border-radius: 4px; font-size: 0.9em;">expression</code> is the calculation you want to perform.</li>
-    </ul>
-
-    <h2 style="border-bottom: 2px solid #eee; padding-bottom: 10px; margin-top: 40px;">Examples</h2>
-    <p>Here are some examples of what you can write when the program asks for your input.</p>
-
-    <hr style="border: 0; height: 1px; background: #ddd; margin: 40px 0;">
-    
-    <h3 style="border-bottom: 2px solid #eee; padding-bottom: 10px; margin-top: 40px;">Example 1: Creating an <code style="font-family: 'Courier New', Courier, monospace; background-color: #f4f4f4; padding: 2px 6px; border-radius: 4px; font-size: 0.9em;">add</code> function</h3>
-    <p><strong style="color: #111;">Your FunJS Code:</strong></p>
-    <pre style="background-color: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto;"><code style="font-family: 'Courier New', Courier, monospace; background-color: transparent; padding: 0; font-size: 1em;">fun add(num1, num2) -> num1 + num2</code></pre>
-    <p><strong style="color: #111;">JavaScript Output:</strong></p>
-    <pre style="background-color: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto;"><code style="font-family: 'Courier New', Courier, monospace; background-color: transparent; padding: 0; font-size: 1em;">function add(num1, num2) { return num1 + num2; }</code></pre>
-
-    <hr style="border: 0; height: 1px; background: #ddd; margin: 40px 0;">
-
-    <h3 style="border-bottom: 2px solid #eee; padding-bottom: 10px; margin-top: 40px;">Example 2: Creating a <code style="font-family: 'Courier New', Courier, monospace; background-color: #f4f4f4; padding: 2px 6px; border-radius: 4px; font-size: 0.9em;">subtract</code> function</h3>
-    <p><strong style="color: #111;">Your FunJS Code:</strong></p>
-    <pre style="background-color: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto;"><code style="font-family: 'Courier New', Courier, monospace; background-color: transparent; padding: 0; font-size: 1em;">fun subtract(x, y) -> x - y</code></pre>
-    <p><strong style="color: #111;">JavaScript Output:</strong></p>
-    <pre style="background-color: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto;"><code style="font-family: 'Courier New', Courier, monospace; background-color: transparent; padding: 0; font-size: 1em;">function subtract(x, y) { return x - y; }</code></pre>
-
-    <hr style="border: 0; height: 1px; background: #ddd; margin: 40px 0;">
-    
-    <h3 style="border-bottom: 2px solid #eee; padding-bottom: 10px; margin-top: 40px;">Example 3: Creating a <code style="font-family: 'Courier New', Courier, monospace; background-color: #f4f4f4; padding: 2px 6px; border-radius: 4px; font-size: 0.9em;">multiply</code> function</h3>
-    <p><strong style="color: #111;">Your FunJS Code:</strong></p>
-    <pre style="background-color: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto;"><code style="font-family: 'Courier New', Courier, monospace; background-color: transparent; padding: 0; font-size: 1em;">fun multiply(a, b) -> a * b</code></pre>
-    <p><strong style="color: #111;">JavaScript Output:</strong></p>
-    <pre style="background-color: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto;"><code style="font-family: 'Courier New', Courier, monospace; background-color: transparent; padding: 0; font-size: 1em;">function multiply(a, b) { return a * b; }</code></pre>
-    
-    <hr style="border: 0; height: 1px; background: #ddd; margin: 40px 0;">
-
-    <h2 style="border-bottom: 2px solid #eee; padding-bottom: 10px; margin-top: 40px;">How It Works (A Simple Explanation)</h2>
-    <p>The transpiler works in three main steps:</p>
-    <ol>
-        <li><strong style="color: #111;">Lexer (or Tokenizer):</strong> It first reads your code and breaks it down into small pieces called "tokens." For example, <code style="font-family: 'Courier New', Courier, monospace; background-color: #f4f4f4; padding: 2px 6px; border-radius: 4px; font-size: 0.9em;">fun</code>, <code style="font-family: 'Courier New', Courier, monospace; background-color: #f4f4f4; padding: 2px 6px; border-radius: 4px; font-size: 0.9em;">add</code>, <code style="font-family: 'Courier New', Courier, monospace; background-color: #f4f4f4; padding: 2px 6px; border-radius: 4px; font-size: 0.9em;">(</code>, <code style="font-family: 'Courier New', Courier, monospace; background-color: #f4f4f4; padding: 2px 6px; border-radius: 4px; font-size: 0.9em;">a</code>, <code style="font-family: 'Courier New', Courier, monospace; background-color: #f4f4f4; padding: 2px 6px; border-radius: 4px; font-size: 0.9em;">)</code>.</li>
-        <li><strong style="color: #111;">Parser:</strong> It takes the list of tokens and organizes them into a tree structure called an Abstract Syntax Tree (AST). This tree represents the meaning of your code.</li>
-        <li><strong style="color: #111;">Generator:</strong> Finally, it walks through the tree and builds the final JavaScript code string from it.</li>
-    </ol>
-    <p>Enjoy experimenting with your new language!</p>
+<h1 align="center">FunJS: A Simple Language Transpiler</h1>
+<h3 align="center">A simple transpiler that converts "FunJS" code into standard JavaScript.</h3>
+<p align="center">
+<img src="https://user-images.githubusercontent.com/8102324/51284128-360a7e00-19d8-11e9-8390-589634c892b1.gif" alt="compiler-gif" width="400">
+</p>
+This project was built to understand the core principles of how a compiler works. It takes a custom, simplified programming language and converts it into a more common one (JavaScript).
+<br>
+🧐 What is a Transpiler?
+A transpiler is a special type of compiler that translates source code from one high-level language to another.
+In our case:
+Input (FunJS): fun add(a, b) -> a + b
+Output (JavaScript): function add(a, b) { return a + b; }
+<br>
+🚀 How to Run the Transpiler
+Clone or download this project to your computer.
+Open your terminal and navigate into the project's root folder.
+Run the interactive script with the following command:
+Generated bash
+node run.js
+Use code with caution.
+Bash
+The program will guide you and ask for your code!
+<br>
+✍️ How to Write FunJS Code
+The syntax for FunJS is designed to be simple and clear. It only supports function creation.
+The basic structure is:
+Generated code
+fun <function_name>(<param1>, <param2>) -> <expression>
+Use code with caution.
+Start every line with the fun keyword.
+Provide a function_name and a list of parameters in parentheses.
+Use the arrow -> to separate the definition from the function's body.
+The expression is the calculation to perform (e.g., param1 + param2).
+<br>
+✨ Examples
+Here are some examples you can try in the terminal.
+Example 1: An add function
+Your FunJS Code:
+Generated code
+fun add(num1, num2) -> num1 + num2
+Use code with caution.
+JavaScript Output:
+Generated javascript
+function add(num1, num2) { return num1 + num2; }
+Use code with caution.
+JavaScript
+Example 2: A multiply function
+Your FunJS Code:
+Generated code
+fun multiply(x, y) -> x * y
+Use code with caution.
+JavaScript Output:
+Generated javascript
+function multiply(x, y) { return x * y; }
+Use code with caution.
+JavaScript
+Example 3: A getArea function
+Your FunJS Code:
+Generated code
+fun getArea(width, height) -> width * height```
+**JavaScript Output:**
+```javascript
+function getArea(width, height) { return width * height; }
+Use code with caution.
+<br>
+⚙️ How It Works (A Simple Explanation)
+The transpiler processes the code in three main stages:
+Lexer (Tokenizer): Reads the raw code and breaks it into a list of "tokens." For example, fun, add, (, a, ).
+Parser: Takes the tokens and builds a tree structure (an Abstract Syntax Tree or AST) that represents the code's meaning and hierarchy.
+Generator: Traverses the AST and builds the final JavaScript code string based on the structure of the tree.
+<p align="center">
+---
+</p>
+<p align="center">
+<em>Enjoy experimenting with your new language!</em>
+</p>
